@@ -5,6 +5,7 @@ package authcmd
 
 import (
 	"fmt"
+	"github.com/faith2333/googlecli/internal/auths"
 	"github.com/spf13/cobra"
 )
 
@@ -18,6 +19,8 @@ var AuthCmd = &cobra.Command{
 	},
 }
 
-func init() {
+var auth auths.Interface
 
+func init() {
+	auth = auths.NewAuth(auths.AuthTypeDefault)
 }

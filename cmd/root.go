@@ -5,7 +5,7 @@ package cmd
 
 import (
 	"fmt"
-	"googlecli/cmd/authcmd"
+	"github.com/faith2333/googlecli/cmd/authcmd"
 	"os"
 
 	"github.com/spf13/cobra"
